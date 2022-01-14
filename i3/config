@@ -184,11 +184,10 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+u exec rofi -combi-modi window#drun#ssh -font "hack 10" -show combi
 bindsym $mod+Shift+d exec discord
-bindsym $mod+Shift+p miam /home/radu/Pictures/cool.png
 ######### compositros/background/scripts/misc
 new_window none
 exec_always feh --bg-fill ~/.config/wallpapers/wp*
-exec_always picom --config /home/radu/.config/picom/picom.conf --experimental-backends --backend glx
+exec_always picom --config ~/.config/picom/picom.conf --experimental-backends --backend glx
 exec_always autotiling
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 ######### gaps
